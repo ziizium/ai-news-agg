@@ -1,3 +1,3 @@
 # Ai-news-agg
 
-This is a __static__ website depicting a AI news aggregator website.
+This is a __static website template__ depicting a AI news aggregator website.
