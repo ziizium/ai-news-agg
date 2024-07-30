@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <title>AI News Aggregator</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header-logo">
+          <a href="index.html">
+            <h1>AI News Aggregator</h1>
+          </a>
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger-button"
+            class="hamburger-button"
+            style="display: none"
+            aria-label="Open Navigation"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#trending">Trending</a></li>
+          </ul>
+        </nav>
+
+        <form>
+          <div class="search-form">
+            <span class="form-control-wrap">
+              <!-- The inline style for the label is to allow it to pass
+               the contrast check from Firefox Accesibility tool in the Dev Tools -->
+              <label class="visually-hidden" for="search" style="color: #ffffff"
+                >Search</label
+              >
+              <input
+                type="text"
+                name="search"
+                id="search"
+                size="40"
+                class="form-control"
+                placeholder="Search"
+              >
+            </span>
+            <button
+              type="submit"
+              class="form-control submit"
+              aria-label="Submit Form"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </form>
+      </header>
+
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h2>Stay updated with the latest AI News</h2>
+          <h3>Your one-stop destination for everything AI</h3>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h2>Newsletter Sign Up</h2>
+        <div class="sidebar-form">
+          <form>
+            <label class="visually-hidden" for="enter-email">Enter Email</label>
+            <input type="email" id="enter-email" name="enter-email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="popular-tags">
+          <p>
+            <span>#llm</span>, <span>#research</span>,
+            <span>#GPT4o</span>
+          </p>
+          <p>
+            <span>#openai</span>, <span>#claude</span>,
+            <span>#sora</span>
+          </p>
+        </div>
+      </aside>
+
+      <section class="latest-news">
+        <h2>Latest News</h2>
+        <div class="latest-news-row">
+          <img src="img/latest-news-1.jpg" alt="">
+          <p><a href="#">Put the article title here</a></p>
+          <p>July 21, 2024</p>
+          <p>TechCrunch</p>
+        </div>
+
+        <div class="latest-news-row">
+          <img src="img/latest-news-2.jpg" alt="">
+          <p><a href="#">Put the article title here</a></p>
+          <p>July 21, 2024</p>
+          <p>TechCrunch</p>
+        </div>
+
+        <div class="latest-news-row">
+          <img src="img/latest-news-3.jpg" alt="">
+          <p><a href="#">Put the article title here</a></p>
+          <p>July 21, 2024</p>
+          <p>TechCrunch</p>
+        </div>
+      </section>
+
+      <section class="explore-by-categories" id="categories">
+        <h2>Explore By Categories</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-image-container">
+              <img src="img/card-image-1.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <p>Machine Learning</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+              <img src="img/card-image-2.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <p>Large Language Models (LLMs)</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+              <img src="img/card-image-3.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <p>AI Startup</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image-container">
+              <img src="img/card-image-4.jpg" alt="">
+            </div>
+            <div class="card-content">
+              <p>Jailbreaking LLMs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trending-news" id="trending">
+        <h2>Trending News</h2>
+        <div class="latest-news-row">
+          <img src="img/trending-1.jpg" alt="">
+          <p><a href="#">Put the article title here</a></p>
+          <p>July 21, 2024</p>
+          <p>TechCrunch</p>
+        </div>
+
+        <div class="latest-news-row">
+          <img src="img/trending-2.jpg" alt="">
+          <p><a href="#">Put the article title here</a></p>
+          <p>July 21, 2024</p>
+          <p>TechCrunch</p>
+        </div>
+
+        <div class="latest-news-row">
+          <img src="img/trending-3.jpg" alt="">
+          <p><a href="#">Put the article title here</a></p>
+          <p>July 21, 2024</p>
+          <p>TechCrunch</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-col">
+          <h1>Quick Links</h1>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h1>Contact</h1>
+          <ul>
+            <li>Email: info@ainews.com</li>
+            <li>Phone: (123) 456-789</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h1>We are on social media</h1>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
